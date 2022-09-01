@@ -5,6 +5,7 @@ import { getTagsFromData } from "../utils";
 import {
   CHARACTERS_LOADED,
   CHARACTERS_SELECTED,
+  MAX_TEAM_MEMBERS,
   SEARCH_TEXT_UPDATE,
   SET_TAGS,
   TAG_MY_TEAM,
@@ -57,10 +58,14 @@ const AppContext: React.FC<React.PropsWithChildren> = ({ children }) => {
   }, []);
 
   const onCharacterSelect: IAppContext["onCharacterSelect"] = (id) => {
-    dispatch({
-      type: CHARACTERS_SELECTED,
-      payload: [...selected, ...(Array.isArray(id) ? id : [id])],
-    });
+    const ids = Array.isArray(id) ? id : [id];
+    let updated = [...selected, ...ids];
+
+    if (updated.length > MAX_TEAM_MEMBERS) {
+      updated = updated.slice(updated.length - MAX_TEAM_MEMBERS);
+    }
+
+    dispatch({ type: CHARACTERS_SELECTED, payload: updated });
   };
 
   const onCharacterDeselect: IAppContext["onCharacterDeselect"] = (id) => {
