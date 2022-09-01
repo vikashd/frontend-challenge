@@ -1,0 +1,14 @@
+.page-container {
+  background-color: #f4fdff;
+  padding-top: 122px;
+}
+
+.page-container__content {
+  padding-top: 30px;
+}
+
+.container {
+  padding: 0 32px;
+  max-width: 1440px;
+  margin: 0 auto 32px;
+}

@@ -1,0 +1,29 @@
+.search {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 40px;
+}
+
+.search input {
+  width: 100%;
+  padding: 10px 10px 10px 38px;
+  background-color: white;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search svg {
+  position: absolute;
+  display: block;
+  width: auto;
+  height: 24px;
+  top: 0;
+  bottom: 0;
+  left: 8px;
+  margin: auto;
+}

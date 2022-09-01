@@ -1,0 +1,59 @@
+.tag {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 1;
+  text-transform: capitalize;
+  color: #217aff;
+  background-color: white;
+  border: 1px solid;
+  border-radius: 20px;
+  padding: 10px 12px;
+  white-space: nowrap;
+}
+
+.tag svg {
+  display: block;
+  width: auto;
+  height: 1em;
+  fill: currentColor;
+  margin-right: 5px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+}
+
+.tags .tag {
+  flex: 0 0 auto;
+  margin: 0 10px 10px 0;
+}
+
+.tags--container {
+  margin-bottom: 40px;
+}
+
+button.tag:hover {
+  color: black;
+}
+
+button.tag.is-selected {
+  color: white;
+  background-color: #227aff;
+}
+
+.tags__clear {
+  color: #999;
+  padding: 10px 12px;
+  border: none;
+  background: none;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.tags__clear:hover,
+.tags__clear:active {
+  text-decoration: none;
+}

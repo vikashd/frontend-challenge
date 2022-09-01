@@ -1,0 +1,15 @@
+.masthead {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 76px;
+  background-color: black;
+  z-index: 9999;
+}
+
+.masthead__logo {
+  display: block;
+  width: 160px;
+  height: auto;
+  margin: 32px auto 0;
+}

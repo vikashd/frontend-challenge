@@ -1,0 +1,44 @@
+.abilities-container {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.abilities-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.abilities {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.abilities__group {
+  display: flex;
+}
+
+.abilities__column {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.abilities__group:first-child .abilities__column:first-child {
+  padding-left: 0;
+}
+
+.abilities__group:last-child .abilities__column:last-child {
+  padding-right: 0;
+}
+
+.abilities__column__heading {
+  margin-bottom: 20px;
+}
+
+.abilities__column__score {
+  font-size: 24px;
+  font-weight: 700;
+}
