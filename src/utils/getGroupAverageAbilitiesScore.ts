@@ -26,7 +26,7 @@ const getGroupAverageAbilitiesScore = (
     )
     .map<CharacterAbility>((total, index) => ({
       abilityName: abilities[index],
-      abilityScore: parseFloat((total / abilities.length).toFixed(2)),
+      abilityScore: parseFloat((total / characters.length).toFixed(2)),
     }));
 
 export { getGroupAverageAbilitiesScore };
